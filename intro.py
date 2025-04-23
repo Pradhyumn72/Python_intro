@@ -41,5 +41,6 @@ d={
     "City":"Bhopal"
 
 }
+
 print(d)
 print(type(d))
