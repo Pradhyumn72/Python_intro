@@ -16,7 +16,7 @@
 # key value=> dictionary{}
 # boolean => true or false
 
-# a=5+9j
+# a=5.4+9j
 # print(type(a))
 
 #list[]
@@ -24,10 +24,10 @@
 # print(a)
 # print(type(a))
 
-# #tuple
-# b=(1,2,True)  #non changable
-# print(b)
-# print(type(b))
+#tuple
+b=(1,2,True)  #non changable
+print(b)
+print(type(b))
 
 # sets mutuable but do not store multiple data
 # c={2,4,"hello"} 
@@ -35,12 +35,18 @@
 # print(type(c))
 
 # dictionary  key can't be duplicate
-d={
-    "Name":"Bunny",
-    "Age": 23,
-    "City":"Bhopal"
+# d={
+#     "Name":"Bunny",
+#     "Age": 23,
+#     "City":"Bhopal"
 
-}
+# }
 
-print(d)
-print(type(d))
+# print(d)
+# print(type(d))
+
+#  identtifiers and var difference :
+# identifier - pyhton k object ka naam..name of an object
+# object- container of a value....object ka reference store krta hai 
+
+#  literals (constant values)
