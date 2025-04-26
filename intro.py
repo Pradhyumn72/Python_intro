@@ -25,9 +25,9 @@
 # print(type(a))
 
 #tuple
-b=(1,2,True)  #non changable
-print(b)
-print(type(b))
+# b=(1,2,True)  #non changable
+# print(b)
+# print(type(b))
 
 # sets mutuable but do not store multiple data
 # c={2,4,"hello"} 
@@ -50,3 +50,10 @@ print(type(b))
 # object- container of a value....object ka reference store krta hai 
 
 #  literals (constant values)
+
+# l1=["python",1,4,"look"]
+# print(l1)
+tup2=("hello",23,"exe")
+print(tup2)
+print(type(tup2))
+print(id(tup2))
