@@ -51,9 +51,110 @@
 
 #  literals (constant values)
 
+# list[]
 # l1=["python",1,4,"look"]
 # print(l1)
-tup2=("hello",23,"exe")
-print(tup2)
-print(type(tup2))
-print(id(tup2))
+
+
+# tup2()
+# tup2=("hello",23,"exe")
+# print(tup2)
+# print(type(tup2))
+# print(id(tup2))
+
+#  dictionary{} => key value pair
+# d1={
+#     'Name':"Bitti",
+#     'Age': 19,
+#     'College':"VIT"
+# }
+# print(d1)
+# print(type(d1))
+# print(id(d1))
+
+# set{}: unordered data type or undordered collection 
+# set1={10,20,30,'push',90,22,'cross','axis','cover','acis','book'}
+# print(set1)
+# a=frozenset(set1)
+# print(type(a))
+
+# x=10 
+# y=2 
+# # p,q,r,c,v,b=30,40,50,60,70,80
+# # print(x,y,p,q,r,c,v,b)
+# a=y//x
+# b=y/x
+# c=y%x
+# d=y*x
+# e=y**x
+# f=y+x
+# g=y-x
+# print(a)
+# print(type(a))
+# print(b)
+# print(type(b))
+# print(c)
+# print(type(c))
+# print(d)
+# print(type(d))
+# print(e)
+# print(type(e))
+# print(f)
+# print(type(f))
+
+# a=10
+# b=20
+# c=5
+
+# a+=b
+# c+=(a+=b)
+# print(a)
+# print(c)
+
+# x=int()
+# print(x)
+# print(type(x))
+# y=float()
+# print(y)
+# print(type(y))
+
+# c=[]
+# d=list()
+# e=str()
+# f=tuple()
+# g=dict()
+# j=set()
+# k=frozenset()
+# print(c)
+# print(type(c))
+# print(d)
+# print(e)
+# print(f)
+# print(g)
+# print(j)
+# print(k)
+
+# x=eval(input("Enter any no."))
+# print(x)
+# print(type(x))
+# y=eval(input("Enter list "))
+# print(y)
+# print(type(y))
+
+# ASC II values
+# space =32
+# 0-9= 48-57
+# A-Z=65-90
+# a-z=97-122
+# x=[9,8,7,'p']
+#  print(sum(x))
+# print(max(x))
+#  print(min(x))
+# print(len(x))
+print("hello")
+print("hi")
+# in print by default in sep space is given and 2nd attribute is end='\n' by default we can edit is also
+# sep= spearates by space or whatever u write in the sep
+# end='\n'
+print("air",end=",")
+print("pro",end="-")
