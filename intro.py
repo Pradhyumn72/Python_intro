@@ -1,4 +1,4 @@
-
+#  limitation of python : it is nod good in memory management
 # # a= int(input("enter radius of circle :"))
 # # area= 3.14*a*a 
 # # print(area)
@@ -151,10 +151,62 @@
 # print(max(x))
 #  print(min(x))
 # print(len(x))
-print("hello")
-print("hi")
+# print("hello")
+# print("hi")
 # in print by default in sep space is given and 2nd attribute is end='\n' by default we can edit is also
 # sep= spearates by space or whatever u write in the sep
 # end='\n'
-print("air",end=",")
-print("pro",end="-")
+# print("air",end=",")
+# print("pro",end="-")
+
+
+# telling the size of every dataset 
+# import sys
+# x=int()
+# y=str()
+# z=list()
+# p=tuple()
+# q=dict()
+# r=set()
+# f=frozenset()
+# print(sys.getsizeof(x))
+# print(sys.getsizeof(y))
+# print(sys.getsizeof(z))
+# print(sys.getsizeof(p))
+# print(sys.getsizeof(q))
+# print(sys.getsizeof(r))
+# print(sys.getsizeof(f))
+
+# x=10
+# y=10
+# print(id(x))
+# print(id(y))
+# a="Python"
+# b="Python"
+# print(id(a))
+# print(id(b))
+# z=["luke",9]
+# w=["luke",9]
+# print(id(z))
+# print(id(w))
+# e={1,2,"present"}
+# q={1,2,"present"}
+# print(id(e))
+# print(id(q))
+# t={6,5,"hello"}
+# d=frozenset(t)
+# print(id(d))
+
+# x=9<<3
+# print(x)
+# s=("python")
+# print(s.index("o"))
+# print(s.index("y",2))
+# print(s.index("p",2,4))
+# print(s.index("p",-5,-1))
+# tup=[10,20,30,"air","book","  "]
+# print(tup.index("  ",3,6))
+# l="python"
+# print(l[0])
+# print(l[-4])
+
