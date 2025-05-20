@@ -217,12 +217,68 @@
 # while i>0:
 #     print(" "*(n-i)+"*"*i)
 #     i=i-1
+# n=int(input("enter val of n "))
+# i=1
+# while i<=n:
+#     print(" "*(n-i)+"* "*i)
+#     i=i+1
+# i=i-2
+# while i>0:
+#     print(" "*(n-i)+"* "*i)
+#     i=i-1
+
+# Armstrong number 
+# 153=1^3+5^3+3^3 will be an armstrong
+# WAP to find total no of digits in a number
+# n=int(input("enter val of n "))
+# method 1 for cal of no of digits 
+# x=str(n)
+# print(len(x))
+
+# digit=0
+# while n >0:
+#     n=n//10
+#     digit=digit+1
+# print(f'total digit is {digit}')
+
+# WAP to find total sum of digits in given no
+# sum=0
+# while n>0:
+#     last_digit=n%10
+#     sum=sum+last_digit
+#     n=n//10
+# print(f'total sum is {sum}')
+
+# Armstrong
+# x=y=n
+# while n>0:
+#     digit=digit+1
+#     n=n//10
+# while x>0:
+#     last_digit=x%10
+#     sum=sum+last_digit**digit
+#     x=x//10
+# if y==sum:
+#     print(f'given number {y} is armstrong number ') 
+
+# else:
+#     print("not ")
+
+# palindrome
 n=int(input("enter val of n "))
-i=1
-while i<=n:
-    print(" "*(n-i)+"* "*i)
-    i=i+1
-i=i-2
-while i>0:
-    print(" "*(n-i)+"* "*i)
-    i=i-1
+# method 1
+# if n==n[::-1]:
+#     print(n,"is palindrom2")
+# else:
+#     print("not")
+
+x=n
+rev=0
+while n > 0:
+    last_digit=n%10
+    rev=rev*10+last_digit
+    n=n//10
+if x==rev:
+    print(x,"is palindrome")
+else:
+    print("not a palindrome")
