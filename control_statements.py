@@ -281,4 +281,4 @@ while n > 0:
 if x==rev:
     print(x,"is palindrome")
 else:
-    print("not a palindrome")
+    print("hence not a palindrome")
