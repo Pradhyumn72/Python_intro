@@ -42,7 +42,7 @@
 # while loop: for infinite iteration
 # for loop; finite iteration
 
-#  while:
+# ============ while===========:
 # n=int(input("enter value of n "))
 # i=1
 # while i<=n:
@@ -264,21 +264,72 @@
 # else:
 #     print("not ")
 
-# palindrome
-n=int(input("enter val of n "))
-# method 1
-# if n==n[::-1]:
-#     print(n,"is palindrom2")
-# else:
-#     print("not")
+# # palindrome
+# n=int(input("enter val of n "))
+# # method 1
+# # if n==n[::-1]:
+# #     print(n,"is palindrom2")
+# # else:
+# #     print("not")
 
-x=n
-rev=0
-while n > 0:
-    last_digit=n%10
-    rev=rev*10+last_digit
-    n=n//10
-if x==rev:
-    print(x,"is palindrome")
+# conventional method 
+# s=str(input("enter a word"))
+# palindrom=True
+# l=int(len(s)/2)
+# i,j=0,-1
+# while l>0:
+#     if s[i]==s[j]:
+#         pass
+#     else:
+#         palindrom=False
+#         break
+#     i=i+1
+#     j=j-1
+#     l=l-1
+# if palindrom:
+#     print(s, "is palindrome")
+# else:
+#     print("not palindrome")
+
+
+# =============For Loop=============
+# l=[1,2,3,4,5]
+# l1=[]
+# for i in l:
+#     l1.append(i**2)
+# print(l1)
+
+#  it will eject out every letter of the word 
+# s="hello"
+# for i in s:
+#     print(i)
+
+
+# char---> ascii ,use ord()
+#  ascii----> char,use chr()
+# x="abcde"
+# y=str()
+
+# for i in x:
+#     print(chr(ord(i)+4))
+
+# for getting in a string
+# x="abcde"
+# y=str()
+
+# for i in x:
+#     print(chr(ord(i)+4))
+#     y=''.join([y,chr(ord(i)+4)])
+# print(y)
+
+n=int(input("enter val of n "))
+sum=0
+for i in (1,n+1):
+    sum=sum+i
+    print(i)
+if i<n:
+        print(i,end="+")
 else:
-    print("hence not a palindrome")
+        print(i,end="=")
+
+    
