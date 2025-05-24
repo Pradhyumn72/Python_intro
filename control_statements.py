@@ -322,14 +322,101 @@
 #     y=''.join([y,chr(ord(i)+4)])
 # print(y)
 
-n=int(input("enter val of n "))
-sum=0
-for i in (1,n+1):
-    sum=sum+i
-    print(i)
-if i<n:
-        print(i,end="+")
-else:
-        print(i,end="=")
-
+# even number sum
+# n=int(input("enter val of n "))
+# sum=0
+# for i in range(2,n+1,2):
+#     sum=sum+i
     
+#     if i<=n-2:
+#         print(i,end="+")
+#     else:
+#         print(i,end="=")
+# print(sum)
+
+# for n even numbers
+
+# for i in range(1,n+1):
+#     sum=sum + (2*i)
+#     if i<n:
+#         print(2*i,end="+")
+#     else:
+#         print(2*i,end="=")
+# print(sum)
+
+# odd number sum
+# for i in range(1,n+1,2):
+#     sum=sum+i
+#     if i<=n-2:
+#         print(i,end="+")
+#     else:
+#         print(i,end="=")
+# print(sum)
+
+
+# ========Transfer statement========
+# continue,break,pass
+
+#  continue (skip current iteration)
+# n=10
+# i=1
+# while i <=n:
+#     if i==5:
+#         i=i+1
+
+#         continue
+#     else:
+#         print(i)
+#         i=i+1
+
+# break
+# n=10
+# i=1
+# while i<=n:
+#     if i==5:
+#         break
+#     else:
+#         print(i)
+#         i=i+1
+# print("hello")
+
+# n=10
+# i=1
+# while i<=n:
+#     if i==5:
+#         pass
+#     else:
+#         print(i)
+#     i=i+1
+# print("hello")
+
+# for avoiding syntax error 
+# n=10
+# i=1
+# if n>=1:
+#     pass
+# else:
+#     print(i)
+while True:
+    print("1.Additon \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.OFF"  )
+    n=int(input("enter operation u want to perform"))
+    x=(1,2,3,4,5)
+    if n in x:
+        if n==1:
+            p=int(input("enter val of p "))
+            q=int(input("enter val of q"))
+            print(p+q)
+        elif n==2:
+            p=int(input("enter val of p "))
+            q=int(input("enter val of q"))
+            print(p-q)
+        elif n==3:
+            p=int(input("enter val of p "))
+            q=int(input("enter val of q"))
+            print(p*q)
+        elif n==4:
+            p=int(input("enter val of p "))
+            q=int(input("enter val of q"))
+            print(p/q)
+    else:
+        print("please enter correct input")
