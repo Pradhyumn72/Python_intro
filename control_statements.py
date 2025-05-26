@@ -397,26 +397,65 @@
 #     pass
 # else:
 #     print(i)
-while True:
-    print("1.Additon \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.OFF"  )
-    n=int(input("enter operation u want to perform"))
-    x=(1,2,3,4,5)
-    if n in x:
-        if n==1:
-            p=int(input("enter val of p "))
-            q=int(input("enter val of q"))
-            print(p+q)
-        elif n==2:
-            p=int(input("enter val of p "))
-            q=int(input("enter val of q"))
-            print(p-q)
-        elif n==3:
-            p=int(input("enter val of p "))
-            q=int(input("enter val of q"))
-            print(p*q)
-        elif n==4:
-            p=int(input("enter val of p "))
-            q=int(input("enter val of q"))
-            print(p/q)
-    else:
-        print("please enter correct input")
+# while True:
+#     print("1.Additon \n 2.Subtraction \n 3.Multiplication \n 4.Division \n 5.OFF"  )
+#     n=int(input("enter operation u want to perform"))
+#     x=(1,2,3,4,5)
+#     if n in x:
+#         if n==1:
+#             p=int(input("enter val of p "))
+#             q=int(input("enter val of q"))
+#             print(p+q)
+#         elif n==2:
+#             p=int(input("enter val of p "))
+#             q=int(input("enter val of q"))
+#             print(p-q)
+#         elif n==3:
+#             p=int(input("enter val of p "))
+#             q=int(input("enter val of q"))
+#             print(p*q)
+#         elif n==4:
+#             p=int(input("enter val of p "))
+#             q=int(input("enter val of q"))
+#             print(p/q)
+#     else:
+#         print("please enter correct input")
+
+#Q1
+# l=[10,20,30,40,50]
+# l[0],l[-1]=l[-1],l[0]
+# print(l)
+
+
+
+# Q2
+# t=(10,20,30,40,50)
+# l=list(t)
+# l[0],l[-1]=l[-1],l[0]
+# t=tuple(l)
+# print(t)
+
+#q3
+# s='python'
+# l=list(s)
+# l[0],l[-1]=l[-1],l[0]
+# print(l)
+# s=''.join(l)
+# print(s)
+
+
+# Q4
+# n=int(input("enter the numof th elements in the list"))
+# s=str(n)
+# l=list(s)
+# l[0],l[-1]=l[-1],l[0]
+# s=''.join(l)
+# print(s)
+
+
+# n=int(input("enter the number="))
+# for i in range(n):
+#     x='A'
+#     for j in range(0,n):
+#         print(chr(ord(x)+j),end=' ')
+#     print()
