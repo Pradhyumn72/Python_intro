@@ -41,54 +41,54 @@
 
 # fact(int(input("enter any no ")))
 
-''' user defined functions
-rel b/w parameter n argument
-i) positional argument: ex(x,y) passing value in this format only
-ii) keyword argument: ex (x=10,y=20) passing this while calling the function
-iii) default argument: ex(x=0,y=0) passing this while declaration of function
-iv) variable length positional argument(*args):
-v) keyword variable 
-'''
+# ''' user defined functions
+# rel b/w parameter n argument
+# i) positional argument: ex(x,y) passing value in this format only
+# ii) keyword argument: ex (x=10,y=20) passing this while calling the function
+# iii) default argument: ex(x=0,y=0) passing this while declaration of function
+# iv) variable length positional argument(*args):
+# v) keyword variable 
+# '''
 
-# def sum(x=0,y=0):# default argument
-# def sum(x,y):
-#     print("val of x",x)
-#     print("val of y",y)
-#     print(x+y)
-# # sum(y=10,x=20) # keyword argument
-# sum(10) # default argument
+# # def sum(x=0,y=0):# default argument
+# # def sum(x,y):
+# #     print("val of x",x)
+# #     print("val of y",y)
+# #     print(x+y)
+# # # sum(y=10,x=20) # keyword argument
+# # sum(10) # default argument
 
-# def sum(*args):
-#     a=0
-#     for i in args:
-#         a=a+i
-#     print(a)
-# sum(10,20)
+# # def sum(*args):
+# #     a=0
+# #     for i in args:
+# #         a=a+i
+# #     print(a)
+# # sum(10,20)
 
-# x=eval(input("enter any tuple : "))
-# print(x)
-# print(type(x))
+# # x=eval(input("enter any tuple : "))
+# # print(x)
+# # print(type(x))
 
-# def sum(*n):
-#     print(n)
-#     print(type(n))
-# x=eval(input("enter any tuple "))
-# sum(x)
-#  single * for taking tuple
-# def sum(*n):
-#     summ=0
-#     for i in n:
-#         for j in i:
-#             for k in j:
-#                 summ=summ+k
-#     print(summ)
-# x=eval(input("enter any list "))
-# sum(x)
+# # def sum(*n):
+# #     print(n)
+# #     print(type(n))
+# # x=eval(input("enter any tuple "))
+# # sum(x)
+# #  single * for taking tuple
+# # def sum(*n):
+# #     summ=0
+# #     for i in n:
+# #         for j in i:
+# #             for k in j:
+# #                 summ=summ+k
+# #     print(summ)
+# # x=eval(input("enter any list "))
+# # sum(x)
 
-#  for taking dictionary as input use **
-def sum(**n):
-    for k,v in n.items():
-        print(k,"=",v)
+# #  for taking dictionary as input use **
+# def sum(**n):
+#     for k,v in n.items():
+#         print(k,"=",v)
 
-# sum(x=10,y=20,z=30)
-sum(name="Pradhyumn",age="19",college="VIT")
+# # sum(x=10,y=20,z=30)
+# sum(name="Pradhyumn",age="19",college="VIT")

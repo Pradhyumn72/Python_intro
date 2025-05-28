@@ -157,6 +157,7 @@
 #     print('*'*i)
 #     i=i+1
 
+
 # n=int(input("enter val of n "))
 # i=1
 # while i<=n:
@@ -459,3 +460,9 @@
 #     for j in range(0,n):
 #         print(chr(ord(x)+j),end=' ')
 #     print()
+
+n=int(input("enter val of n "))
+i=0
+while i<=n:
+    print((n-i)*" "+ i*'*' )
+    i=i+1
