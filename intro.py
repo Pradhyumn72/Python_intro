@@ -204,8 +204,8 @@
 # print(s.index("y",2))
 # print(s.index("p",2,4))
 # print(s.index("p",-5,-1))
-# tup=[10,20,30,"air","book","  "]
-# print(tup.index("  ",3,6))
+tup=[10,20,30,"air","book","  "]
+print(tup.index("  ",3,6))
 # l="python"
 # print(l[0])
 # print(l[-4])

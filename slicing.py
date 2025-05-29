@@ -17,5 +17,23 @@
 # s = 'pythonista'
 # output:inoh
 # print(s[::-1])
-s = 'program'
-print(s[-6:-1:2])
+# s = 'program'
+# print(s[-6:-1:2])
+# s1=["bunny","mac","book","pro","air","fruit","samsung","actually"]
+s2= [1,2,3,4,4,4,5,5,1,2,43]
+# s3="Actually macbook is a samsung fruit"
+# print(s3.split())
+# b=str(input("enter a string "))
+# for i in s1:
+#     if i==b:
+#         break
+#     else:
+#         print("not found ")``
+# print("_",s1.join(s2))
+# s1="Rhythrrrrm"
+# # s2="World"
+# print(s1.count("r"))
+# s2.append(0)
+# print(s2)
+s2.insert(2,4,12)
+print(s2)

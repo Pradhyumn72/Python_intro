@@ -108,23 +108,17 @@
 # Q2. n even numbers 
 # n=2
 # i=1
-# while i<=10:
+# while i<=n:
 #     print(i*n)
 #     i=i+1
 
 # Q3 sum of even nos till 10
-# n=2
-# i=1
-# b=0
-# while i<=n:
-#     b=b+i
-#     if i<n:
-#         print(i,end="+")
-#     else:
-#         print(i,end="=")
-
-# i=i+1
-
+# mult = 1
+# i = 2
+# while i <= 10:
+#     mult *= i
+#     i += 2
+# print(mult)
 # Q4 multiplication of even nos till n
 
 
@@ -161,7 +155,7 @@
 # n=int(input("enter val of n "))
 # i=1
 # while i<=n:
-#     print(" "*(n-i)+'* '*i)
+#     print(""*(n-i)+'* '*i)
 #     i=i+1
 # n=int(input("enter val of n "))
 # i=0
@@ -231,16 +225,16 @@
 # Armstrong number 
 # 153=1^3+5^3+3^3 will be an armstrong
 # WAP to find total no of digits in a number
-# n=int(input("enter val of n "))
+n=int(input("enter val of n "))
 # method 1 for cal of no of digits 
 # x=str(n)
 # print(len(x))
 
-# digit=0
-# while n >0:
-#     n=n//10
-#     digit=digit+1
-# print(f'total digit is {digit}')
+digit=0
+while n >0:
+    n=n//10
+    digit=digit+1
+print(f'total digit is {digit}')
 
 # WAP to find total sum of digits in given no
 # sum=0
@@ -461,8 +455,8 @@
 #         print(chr(ord(x)+j),end=' ')
 #     print()
 
-n=int(input("enter val of n "))
-i=0
-while i<=n:
-    print((n-i)*" "+ i*'*' )
-    i=i+1
+# n=int(input("enter val of n "))
+# i=0
+# while i<=n:
+#     print((n-i)*" "+ i*'*' )
+#     i=i+1

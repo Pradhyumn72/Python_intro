@@ -92,3 +92,7 @@
 
 # # sum(x=10,y=20,z=30)
 # sum(name="Pradhyumn",age="19",college="VIT")
+
+l=[64,35,25,12,22,11,90,5]
+l.sort(reverse=True)
+print(l)
