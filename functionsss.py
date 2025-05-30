@@ -9,7 +9,8 @@
  func-name(arguments)
  return
 
- function without a name is called lambda function
+ function without a name is called lambda function3
+
  '''
 
 # def evennos(n):
@@ -93,6 +94,110 @@
 # # sum(x=10,y=20,z=30)
 # sum(name="Pradhyumn",age="19",college="VIT")
 
-l=[64,35,25,12,22,11,90,5]
-l.sort(reverse=True)
-print(l)
+# l=[64,35,25,12,22,11,90,5]
+# l.sort(reverse=True)
+# print(l)
+
+#higher order functions
+#ek function ke argument me  agr ham ek or func pss  krde to usko hOF boltey he
+
+
+                                                     #hof
+                                                    # || 
+              #map() same no of output,filter()less than or equal output ,reduce() only 1 output,lambda(),decortator(),generator()
+              
+              
+#map()..................
+#syntax
+
+# map(fun_name,iterator 1, iterator2,....)
+
+# map(fun_name,collection 1, collection2,....)
+
+# l=[1,2,3,4,5]
+# def sqr(n):
+#     return n**2
+# x=map(sqr,l)
+# print(x)
+# print(list(x))
+
+
+
+
+
+# l1=[1,2,3,4,5]
+# l2=[2,3,4,5,6]
+# l3=[7,4,5,6,9]
+# def add(x,y,z):
+#     return(x+y+z)
+# p=map(add,l1,l2,l3)
+# print(list(p))
+
+# l1=[5,6,7]
+# l2=[3,2,1]
+# def sub(x,y):
+#     return(x-y)
+# s=map(sub,l1,l2)
+# print(list(s))
+
+#...................................................
+
+
+#map me input or output element  equal hote he isliye yeh wrong case he isme ek 2 kam output me ayenge  (yeh input/output wala concept mobile me hai)
+# l1=[1,2,3,4,5]
+# l2=[2,3,4]
+# l3=[7,4,5,6,9]
+# def add(x,y,z):
+#     return(x+y+z)
+# p=map(add,l1,l2,l3)
+# print(list(p))
+# l1=[4,9,16,25,36,49]
+# def sqrt(n):
+#     return n**(0.5)
+# ma=map(sqrt,l1)
+# print(list(ma))
+
+# l1=[1,2,3,4,5,6]
+# l2=[2,4,6,8,10]
+# def even(n):
+#     if n%2==0:
+#         return (n)
+# x=filter(even,l2)
+# print(list(x))
+# y=filter(even,l1)
+# print(list(y))
+
+# Reduce(func-name.iterator,initial val) - for single output 
+from functools import reduce
+l1=[1,2,3,4,5]
+l2=[1,2,3,4,5,6,7,8]
+# def maxx(x,y):
+#     if x>y:
+#         return x
+#     else:
+#         return y
+# x=reduce(maxx,l1)
+# print(x)
+# def summ(x,y):
+#     return x+y
+# x=reduce(summ,l1)
+# print(x)
+# sum=0
+# def sq(sum,x):
+#     return sum + x
+
+# q=reduce(sq,l1)
+# print(q)
+
+# lambda (); can take n no of parameters
+# syntax : lambda (parameter ): expression
+x=lambda x,y: (x+y)
+p=int(input("enter val of p "))
+q=int(input("enter val of q "))
+z=x(p,q)
+print(z)
+
+
+# when we will write print at both end...none will come,,because value of z stored is z
+
+
