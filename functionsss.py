@@ -24,10 +24,11 @@
 # evennos(int(input("enter no ")))
 
 # def fact(n):
-#     fact =1
+#     factt =1
 #     for i in range(1,n+1):
-#         fact=fact*i
-#     print(fact)
+#         factt=factt*i
+#     print(factt)
+# fact(int(input("enter val of n ")))
 
 # fact(int(input("enter any no ")))
 # def fact(n):
@@ -191,11 +192,11 @@ l2=[1,2,3,4,5,6,7,8]
 
 # lambda (); can take n no of parameters
 # syntax : lambda (parameter ): expression
-x=lambda x,y: (x+y)
-p=int(input("enter val of p "))
-q=int(input("enter val of q "))
-z=x(p,q)
-print(z)
+# x=lambda x,y: (x+y)
+# p=int(input("enter val of p "))
+# q=int(input("enter val of q "))
+# z=x(p,q)
+# print(z)
 
 
 # when we will write print at both end...none will come,,because value of z stored is z

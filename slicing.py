@@ -160,19 +160,98 @@ d={1:"hello",2:"my",3:"name",4:"is bunny"}
 #             l[j], l[j+1] = l[j+1], l[j] 
 #             print(l)
 # x=int(input("enter val of x "))
-n=int(input("enter a val of n "))
-sum=0
-for i in range(1,n+1):
-    if n%i==0:
-        sum=sum+i
+# n=int(input("enter a val of n "))
+# sum=0
+# for i in range(1,n+1):
+#     if n%i==0:
+#         sum=sum+i
 
-print(sum)
-if sum==2*n:
-    print("n is perfect number")
-else:
-    print("not perfect ")
+# print(sum)
+# if sum==2*n:
+#     print(n," is perfect number")
+# else:
+#     print("not perfect ")
+# l=[90,21,67,9,3,13,56]
+# n=len(l)
+# for i in range(n-1):
+#     for j in range(n-i-1):
+#         if l[j]<l[j+1]:
+#             l[j],l[j+1]=l[j+1],l[j]
+# print(l)
 
-
-
+# n=int(input("enter val of n "))
+# i=n
+# while i>=1:
     
+#     print(' '*(n-i)+'*'*i)
+#     i=i-1
+
+# a = int(input("Enter value of a: "))
+# b = int(input("Enter value of b: "))
+
+# print(f"Before swapping: a = {a}, b = {b}")
+
+# # Swapping using third variable
+# temp = a
+# a = b
+# b = temp
+
+# print(f"After swapping: a = {a}, b = {b}")
+
+
+# string = input("Enter a string: ")
+
+# vowels = "aeiouAEIOU"
+# vowel_count = 0
+# consonant_count = 0
+
+# i = 0
+# while i < len(string):
+#     char = string[i]
+#     if char.isalpha():  # Only letters
+#         if char in vowels:
+#             vowel_count += 1
+#         else:
+#             consonant_count += 1
+#     i += 1
+
+# print("Vowels:", vowel_count)
+# print("Consonants:", consonant_count)
+
+
+# l1=(10,20,30,40,50)
+# i=0
+# while i <len(l1):
+#     l1.index(i)=l1.index(i)+5
+#     i=i+1
+# print(l1)
+
+# l1 = (10, 20, 30, 40, 50)
+# i = 0
+# temp = []
+
+# while i < len(l1):
+#     temp.append(l1[i] + 5)
+#     i += 1
+
+# l1 = tuple(temp)
+# print("Updated tuple:", l1)
+
+# string = input("Enter a string: ")
+# char_list = []
+# i = 0
+
+# while i < len(string):
+#     char_list += [string[i]]
+#     i += 1
+
+# print("Characters in the string:", char_list)
+n=int(input("enter val of x "))
+i=0
+mult=0
+for i in range(1,11):
+    mult=n*i
+    i=i+1
+    print(mult)
+
 
