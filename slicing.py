@@ -246,12 +246,143 @@ d={1:"hello",2:"my",3:"name",4:"is bunny"}
 #     i += 1
 
 # print("Characters in the string:", char_list)
-n=int(input("enter val of x "))
-i=0
-mult=0
-for i in range(1,11):
-    mult=n*i
-    i=i+1
-    print(mult)
+# n=[20,40,59,32,44,65]
+# i=0
+# for i in range(len(n)):
+#     n[i]=i
+#     i=i+1
+#     print(i)
+
+# num = input("Enter a number: ")
+
+# count = 0
+
+# for digit in num:
+#     if digit.isdigit():  # Skip minus sign or other characters
+#         count += 1
+
+# print("Total number of digits:", count)
+# a=str(input("enter "))
+# b=a[::-1]
+# print(b)
+# n = int(input("Enter value of n: "))
+# original = n  # Backup the original number
+
+# # 1. Count digits
+# digit_count = 0
+# x = n
+# while x > 0:
+#     digit_count += 1
+#     x //= 10
+# print(f"Total digits: {digit_count}")
+
+# 2. Sum of digits
+# x = n
+# sum_digits = 0
+# while x > 0:
+#     sum_digits += x % 10
+#     x //= 10
+# print(f"Sum of digits: {sum_digits}")
+
+# 3. Armstrong check
+
+# x=n
+# sum_armstrong = 0
+# while x > 0:
+#     last_digit = x % 10
+#     sum_armstrong += last_digit ** digit_count
+#     x //= 10
+
+# if original == sum_armstrong:
+#     print(f"{original} is an Armstrong number.")
+# else:
+#     print(f"{original} is not an Armstrong number.")
 
 
+# start = int(input("Enter start of range: "))
+# end = int(input("Enter end of range: "))
+
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# print(f"\nNon-prime numbers between {start} and {end} are:")
+# for num in range(start, end + 1):
+#     if not is_prime(num):
+#         print(num, end=" ")
+
+
+# num = int(input("enter val of num "))
+# first_value, second_value = 0, 1
+# # Print Fibonacci numbers less than or equal to 'num'
+# for i in range(num):
+#     if first_value > num:
+#         break
+#     print(first_value, end=" ")
+#     next_value = first_value + second_value
+#     first_value = second_value
+#     second_value = next_value
+# num = int(input("Enter value of num: "))
+
+# factt = 1
+
+# if num == 0:
+#     print("Factorial is 1")
+# else:
+#     for i in range(1, num + 1):
+#         factt = factt * i
+#     print(f"Factorial of {num} is {factt}")
+
+# given range
+# given_range = 25
+ 
+# # iterate using a for loop till the
+# # given range
+# for i in range(given_range+1):
+#     print(i)
+#     i+=1
+ 
+    # if no. is multiple of 4 and 5
+    # print fizzbuzz
+    # if i % 4 == 0 and i % 5 == 0:
+    #     print("fizzbuzz")
+ 
+    #     # continue with the loop
+    #     continue
+ 
+    # # if no. is divisible by 4
+    # # print fizz and no by 5
+    # if i % 4 == 0 and i%5!=0:
+    #     print("fizz")
+ 
+    #     # continue with the loop
+    #     continue
+    # # if no. is divisible by 5
+    # # print buzz and not by 4
+    # if i % 5 == 0 and i % 4!= 0:
+    #     print("buzz")
+ 
+    # else:
+ 
+    #     # else just print the no.
+    #     print(i)
+
+
+
+# Get the month name from user
+month = input("Enter month name: ")
+
+# Use title case to avoid case mismatches
+month = month.capitalize()
+
+# Check how many days it has
+if month == "February":
+    print("The month of February has 28 or 29 days.")
+elif month in ("April", "June", "September", "November"):
+    print("The month of", month, "has 30 days.")
+elif month in ("January", "March", "May", "July", "August", "October", "December"):
+    print("The month of", month, "has 31 days.")
