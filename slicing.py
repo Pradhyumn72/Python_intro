@@ -373,13 +373,11 @@ d={1:"hello",2:"my",3:"name",4:"is bunny"}
 
 
 
-# Get the month name from user
+
 month = input("Enter month name: ")
 
-# Use title case to avoid case mismatches
 month = month.capitalize()
 
-# Check how many days it has
 if month == "February":
     print("The month of February has 28 or 29 days.")
 elif month in ("April", "June", "September", "November"):
