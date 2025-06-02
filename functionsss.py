@@ -172,6 +172,7 @@
 from functools import reduce
 l1=[1,2,3,4,5]
 l2=[1,2,3,4,5,6,7,8]
+l3=[1,2,3,4,5,6,7,2]
 # def maxx(x,y):
 #     if x>y:
 #         return x
@@ -202,3 +203,45 @@ l2=[1,2,3,4,5,6,7,8]
 # when we will write print at both end...none will come,,because value of z stored is z
 
 
+# x=map(lambda x:x**2,l1)
+# print(list(x))
+
+
+# l1=[1,2,3,4,5,6,7,8,9,10,12]
+# # n=8
+# # p= lambda x:['even'if x%2==0 else 'odd'] # writing if else in single line
+# # print(p(n))
+# p=map(lambda x:'even' if x%2==0 else 'odd',l1)
+# print(list(p))
+
+# l=[1,2,3,5,7,9,0,4]
+# x=reduce(lambda p,q: p if p > q else q,l) # finding largest
+# x=reduce(lambda p,q: p+q,l) 
+
+# print(x)
+
+
+# Decorators : it takes argument as a function and return also a function, denoted by @
+
+# def decor(x):
+#     def inner_func():
+#         p=x
+#         return p
+#     return inner_func
+# x=decor(10)
+# print(x)
+# z=x()
+# print(z)
+
+def decor(x):
+    def inner_func(r,s):
+        r=r+5
+        s=s+5
+        p=x(r,s)
+        return p
+    return inner_func
+@decor
+def add(x,y):
+    return x+y
+z=add(5,10)
+print(z)
