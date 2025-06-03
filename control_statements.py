@@ -243,7 +243,6 @@ print(f'total digit is {digit}')
 #     sum=sum+last_digit
 #     n=n//10
 # print(f'total sum is {sum}')
-
 # Armstrong
 # x=y=n
 # while n>0:
