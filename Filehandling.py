@@ -29,4 +29,5 @@ print(f3.mode)
 print(f3.readable())
 print(f3.writable())
 f3.close()
+
 print(f3.closed)
