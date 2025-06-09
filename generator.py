@@ -9,7 +9,7 @@ x=even_no(n)
 for i in x:
     print(i)
 
-# def even_no(n):
+# def even_no(n)
 #     for i in range(2,n+1,2):
 #         print(i)
 #     even_no(n)
