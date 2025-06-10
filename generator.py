@@ -15,3 +15,5 @@ for i in x:
 #     even_no(n)
 # for i in x:
 #     print (i)
+#     print (i)
+#     print (i)
