@@ -102,8 +102,7 @@ a-append,here if file doesn't exist...it will create the file
 # tell=> finds out cursor current position 
 # seek=> to move cursor,two attributes will be passed (kaha ko move krwana hai ,kaha se) 0,1,2 is for kaha se only
 # 0 is for 0th index,1 for current positon,2 for last position
- 
-f=open('n.txt','a+')
+
 # data=f.read(10)
 # data1=f.seek(0,0)
 
@@ -112,14 +111,46 @@ f=open('n.txt','a+')
 # print(data)\
 # print(data1)
 # print(data2)
-print(f.tell())
-f.seek(5,0)
-data = f.read(5)
-print(data)
-print(f.tell())
-f.write('okayy')
-f.seek(0,0)
+# print(f.tell())
+# f.seek(5,0)
+# data = f.read(5)
+# print(data)
+# print(f.tell())
+# f.write('okayy')
+# f.seek(0,0)
 # dt=f.read()
 # print(dt)
+# with open('n.txt','r+') as f: # when we use with open we do not need to close the file ..it automatically gets closed..
+#     f.seek(0)
+#     print(f.tell())
+#     f.read(10)
+#     print(f.tell())
+#     f.seek(5)
+#     print(f.tell())
+#     f.write('python')
+#     f.seek(0)
+    
+# print(f.closed)
+
+# f=open('n.txt','r+')
+# print(f.closed)
+# f.close()
+# print(f.closed)
 
 
+# Pickling 
+# pickle converts python file to byte format
+# dump() : converts python object to byte code
+# load() byte to python
+# dumps() for byte code 
+import pickle 
+# f =open('n1.pkl','ab+')
+# data ={'name': "bunny","age":19}
+# # pickle.dump(data,f)
+# pickle.dump(data)
+# f.close()
+f=open('n1.pkl','rb+')
+data=pickle.load(f)
+print(data)
+f.close()
+print(data)
