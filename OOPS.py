@@ -9,7 +9,7 @@
 #class syntax
 #class Class_name:
 #   "doc string"
-#  varible are three category--class varible,instance variable , local variable
+#  varible are three category--class variable,instance variable , local variable
 
 
 #constructor 
@@ -130,19 +130,43 @@
 
 # class variable and static variable
 
-class Student ():
-    school="SPSSN" # declaration of class variable
-    def __init__(self,name,grade,roll):
-        self.name=name
-        self.grade=grade
-        self.roll=roll
+# class Student ():
+#     school="SPSSN" # declaration of class variable
+#     def __init__(self,name,grade,roll):
+#         self.name=name
+#         self.grade=grade
+#         self.roll=roll
+#         Student.principal="Python" ## this variable can only be accessed when we will call the const 
+#         print(Student.city) # accessing class variable declared outside class
+#     def show(self):
+#         print(self.name)
+#         print(self.grade)
+#         print(self.roll)
+#         print(Student.school) #accessing of class variable
+
+# Student.city="Bhopal" # declaring class variable outside class and 
+# obj=Student("pradhyumn","A+",101)
+# print(Student.school)
+# print(Student.principal) ##
+# obj.show()
+# obj1=Student("bunny","B+",102)
+# obj1.show()
+
+
+# class method
+class Student:
+    grade="1st"
+    def __init__(self,name,roll):
+        self.n=name
+        self.r=roll 
     def show(self):
-        print(self.name)
-        print(self.grade)
-        print(self.roll)
-        print(Student.school) #accessing of class variable
-obj=Student("pradhyumn","A+",101)
+        print(self.n)
+        print(self.r)
+        print(Student.grade)
+    @classmethod
+    def update(cls,x):
+        cls.grade=x
+obj=Student("action",40)
+obj.update("2nd")
 obj.show()
-obj1=Student("bunny","B+",102)
-obj.show()
-obj1.show()
+        
