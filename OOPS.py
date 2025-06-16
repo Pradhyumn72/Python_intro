@@ -89,24 +89,24 @@
 #         print("4th const called")
 # obj=Student()
 
-class Student:
-    # variable with self is instance variable
-    # method with first parameter as self is known as instance method
-    # n,a,r,c is instance variable
-    def __init__(self,name,age,roll_no,city):
-        self.n=name
-        self.a=age
-        self.r=roll_no
-        self.c=city
-    def show(self):
-        print(self.n)
-        print(self.a)
-        print(self.r)
-        print(self.c)
-        print(self.school)
-        # another method to variable
-    def  add (self,principal):
-        self.p=principal
+# class Student:
+#     # variable with self is instance variable
+#     # method with first parameter as self is known as instance method
+#     # n,a,r,c is instance variable
+#     def __init__(self,name,age,roll_no,city):
+#         self.n=name
+#         self.a=age
+#         self.r=roll_no
+#         self.c=city
+#     def show(self):
+#         print(self.n)
+#         print(self.a)
+#         print(self.r)
+#         print(self.c)
+#         print(self.school)
+#         # another method to variable
+#     def  add (self,principal):
+#         self.p=principal
 # x=str(input("enter your name "))
 # y=int(input("enter your age "))
 # z=int(input("enter your roll no "))
@@ -117,10 +117,32 @@ class Student:
 # print(stu1.a)
 # print(stu1.r)
 # print(stu1.c)
-obj=Student('pradhyumn',19,100,'idr')
+# obj=Student('pradhyumn',19,100,'idr')
+# # obj.show()
+# # we can define an instance variable outside the const as the add is same of obj and self 
+# obj.school='SPS'
 # obj.show()
-# we can define an instance variable outside the const as the add is same of obj and self 
-obj.school='SPS'
+# obj.add('mac')
+# print(obj.p)
+
+
+# Day 3 OOPS
+
+# class variable and static variable
+
+class Student ():
+    school="SPSSN" # declaration of class variable
+    def __init__(self,name,grade,roll):
+        self.name=name
+        self.grade=grade
+        self.roll=roll
+    def show(self):
+        print(self.name)
+        print(self.grade)
+        print(self.roll)
+        print(Student.school) #accessing of class variable
+obj=Student("pradhyumn","A+",101)
 obj.show()
-obj.add('mac')
-print(obj.p)
+obj1=Student("bunny","B+",102)
+obj.show()
+obj1.show()
