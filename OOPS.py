@@ -47,7 +47,7 @@
 # print(id(Demo))
 # obj=Demo
 # print(id(obj))
-#yeh same adrewsss dega qki abi hamne kisi ko assign nahi kiya he
+#yeh same address dega because abi hamne kisi ko assign nahi kiya he
 
 
 
