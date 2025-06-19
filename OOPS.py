@@ -154,19 +154,65 @@
 
 
 # class method
-class Student:
-    grade="1st"
-    def __init__(self,name,roll):
-        self.n=name
-        self.r=roll 
-    def show(self):
-        print(self.n)
-        print(self.r)
-        print(Student.grade)
-    @classmethod
-    def update(cls,x):
-        cls.grade=x
-obj=Student("action",40)
-obj.update("2nd")
-obj.show()
-        
+# class Student:
+#     grade="1st"
+#     def __init__(self,name,roll):
+#         self.n=name
+#         self.r=roll 
+#     def show(self):
+#         print(self.n)
+#         print(self.r)
+#         print(Student.grade)
+#     @classmethod
+#     def update(cls,x):
+#         cls.grade=x
+# obj=Student("action",40)
+# obj.update("2nd")
+# obj.show()
+    
+
+
+
+#local variable
+# class student:
+#   def new(self):
+#     x=10
+#     print(x)
+#   def new1(self):
+#     print(x)
+# obj1=student()
+# obj1.new()
+
+
+
+# class student:
+#   def first(self):
+#     print("from first method")
+    
+#   @staticmethod
+#   def wel_great():
+#     print("welcome this webspage")
+    
+#   @staticmethod
+#   def thankx_great():
+#     print("thankx for visit")
+# obj=student()
+# obj.wel_great()
+
+
+''' ABSTRACTION: taking useful info only 
+
+'''
+from abc import ABC,abstractmethod
+class Senior(ABC):
+    def add(self,x,y):
+        return x+y
+    def sub(self,x,y):
+        return x-y
+    @abstractmethod
+    def multi(self):
+        pass
+class Junior(Senior):
+    def multi(self,x,y): #in child we are bound to use abstract of parent class
+        return x*y
+obj=Junior()
