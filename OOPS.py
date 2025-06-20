@@ -203,16 +203,200 @@
 ''' ABSTRACTION: taking useful info only 
 
 '''
-from abc import ABC,abstractmethod
-class Senior(ABC):
+# from abc import ABC,abstractmethod
+# class Senior(ABC):
+#     def add(self,x,y):
+#         return x+y
+#     def sub(self,x,y):
+#         return x-y
+#     @abstractmethod
+#     def multi(self):
+#         pass
+# class Junior(Senior):
+#     def multi(self,x,y): #in child we are bound to use abstract of parent class
+#         return x*y
+# obj=Junior()
+
+
+# Encapsulation
+# in opps method & variables are wraped in single unit
+# Access Modifiers
+# Public - can be accessed from anywhere     x/display()
+# Private - can be accessed only within the class  __x/__display()
+# Protected - can be accessed within the class and its subclasses  _x/_display()
+
+# public variable/ public method
+# class Parent:
+#     x=2
+#     def display(self):
+#         print("from parent class")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# print(obj.x)  # Accessing public variable
+# print(obj.display())
+
+# protected 
+# class Parent:
+#     _x=2
+#     def _display(self):
+#         print("from parent class")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# print(obj._x)  # Accessing protected variable
+# print(obj._display())
+
+# private
+# class Parent:
+#     __x=2
+#     def __display(self):
+#         print("from parent class")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# print(obj.__x)  # Accessing private variable
+# print(obj.__display())
+
+
+# class Parent:
+#     __x=10
+#     def __display(self):
+#         print("from parent class")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# # print(obj.__x)  # Accessing private variable
+# # print(obj.__display())
+# print(dir(Parent))
+# print(Parent._Parent__x)
+# print(obj._Parent__x)
+
+
+
+# Inheritance
+
+# parent-child relationship
+# Inheritance allows a class to inherit attributes and methods from another class.
+
+
+
+# class Parent:
+#     Bank_acc=10000
+#     def home(self):
+#         print("Home from parent class")
+#     def car(self):
+#         print("Car from parent class")
+# class Child(Parent):
+#     pass
+# obj=Child()
+# print(obj.Bank_acc)
+# print(obj.home())
+# print(obj.car())
+
+
+# type of inheritance
+# 1. Single Inheritance - one parent class, one child class
+# 2. Multiple Inheritance - multiple parent classes, one child class
+# 3. Multilevel Inheritance - one parent class, one child class, and so on
+# 4. Hierarchical Inheritance - multiple child classes from one parent class
+# 5. Hybrid Inheritance - combination of multiple inheritance and multilevel inheritance
+
+
+# 2. Multilevel
+
+# class GP:
+#     def home1(self):
+#         print("home of gp")
+# class P(GP):
+#     def home2(self):
+#         print("home of p ")
+# class C(P):
+#     pass
+
+# obj=C()
+# obj.home1()
+# obj.home2()
+
+
+# 3.multiple inheritance
+
+# class Father:
+#     def prop(self):
+#         print("properties of father")
+
+# class Mother:
+#     def prop1(self):
+#         print("Prop of mother")
+
+# class Child(Father,Mother): # (MRO) if same name  method is there in parent classes then dfs will be applied in choosing class...first Father and mother 
+#     pass
+
+# obj=Child()
+# obj.prop()
+# obj.prop1()
+
+
+# 4.Hierarchichal Inheritance 
+
+# class Parent:
+#     def home(self):
+#         print("home of parents")
+
+# class Son(Parent):
+#     pass
+# class Daughter(Parent):
+#     pass
+
+# obj=Parent()
+# obj.home()
+
+
+# 5.Hybrid inheritance
+
+# class Parent:
+#     def home(self):
+#         print("home of parents")
+
+# class Son(Parent):
+#     def car(self):
+#         print("car of son")
+# class Daughter(Parent):
+#     def mobile(self):
+#         print("mob of daughter")
+# class Child(Son,Daughter):
+#     pass
+
+# obj=Son()
+# obj1=Daughter()
+# obj.home()
+# obj.car()
+# obj1.mobile()
+
+# Method overriding : same function name diff class
+
+# class Parent:
+#     def home(self):
+#         print("home of parents")
+
+# class Son(Parent):
+#     def home(self):
+#         print("home of son")
+#         super().home()  #for accessing parent method
+# obj=Son()
+# obj.home()
+
+# Achieving method overloading 
+class Addition:
     def add(self,x,y):
         return x+y
-    def sub(self,x,y):
-        return x-y
-    @abstractmethod
-    def multi(self):
-        pass
-class Junior(Senior):
-    def multi(self,x,y): #in child we are bound to use abstract of parent class
-        return x*y
-obj=Junior()
+    def add(self,x,y,z):
+        return x+y+z
+    def add(self,*n):
+        sum=0
+        for i in n:
+            sum=sum+i
+        print(sum)
+obj=Addition()
+obj.add(1,2)
+    
