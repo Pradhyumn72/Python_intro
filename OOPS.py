@@ -339,18 +339,20 @@
 
 # 4.Hierarchichal Inheritance 
 
-# class Parent:
-#     def home(self):
-#         print("home of parents")
+class Parent:
+    def home(self):
+        print("home of parents")
+    def car(self):
+        print("car of parents")
 
-# class Son(Parent):
-#     pass
-# class Daughter(Parent):
-#     pass
+class Son(Parent):
+    pass
+class Daughter(Parent):
+    pass
 
-# obj=Parent()
-# obj.home()
-
+obj=Parent()
+obj.home()
+obj.car()
 
 # 5.Hybrid inheritance
 
@@ -387,16 +389,16 @@
 # obj.home()
 
 # Achieving method overloading 
-class Addition:
-    def add(self,x,y):
-        return x+y
-    def add(self,x,y,z):
-        return x+y+z
-    def add(self,*n):
-        sum=0
-        for i in n:
-            sum=sum+i
-        print(sum)
-obj=Addition()
-obj.add(1,2)
+# class Addition:
+#     def add(self,x,y):
+#         return x+y
+#     def add(self,x,y,z):
+#         return x+y+z
+#     def add(self,*n):
+#         sum=0
+#         for i in n:
+#             sum=sum+i
+#         print(sum)
+# obj=Addition()
+# obj.add(1,2)
     
