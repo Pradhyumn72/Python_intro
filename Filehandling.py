@@ -150,6 +150,7 @@ import pickle
 # pickle.dump(data)
 # f.close()
 f=open('n1.pkl','rb+')
+f.seek()
 data=pickle.load(f)
 print(data)
 f.close()
