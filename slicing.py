@@ -384,3 +384,5 @@ elif month in ("April", "June", "September", "November"):
     print("The month of", month, "has 30 days.")
 elif month in ("January", "March", "May", "July", "August", "October", "December"):
     print("The month of", month, "has 31 days.")
+elif month == "March":
+    print("ok")
