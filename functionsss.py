@@ -232,6 +232,7 @@ l3=[1,2,3,4,5,6,7,2]
 # print(x)
 # z=x()
 # print(z)
+@decor
 
 def decor(x):
     def inner_func(r,s):
