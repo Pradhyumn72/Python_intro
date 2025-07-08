@@ -45,7 +45,7 @@
 # print(d)
 # print(type(d))
 
-#  identtifiers and var difference :
+#  identifiers and var difference :
 # identifier - pyhton k object ka naam..name of an object
 # object- container of a value....object ka reference store krta hai 
 
@@ -107,7 +107,7 @@
 # c=5
 
 # a+=b
-# c+=(a+=b)
+# # c+=(a+=b)
 # print(a)
 # print(c)
 
@@ -204,8 +204,8 @@
 # print(s.index("y",2))
 # print(s.index("p",2,4))
 # print(s.index("p",-5,-1))
-tup=[10,20,30,"air","book","  ","study","pro","action"]
-print(tup.index("  ",3,6))
+# tup=[10,20,30,"air","book","  ","study","pro","action"]
+# print(tup.index("  ",3,6))
 # l="python"
 # print(l[0])
 # print(l[-4])
