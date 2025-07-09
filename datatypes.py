@@ -118,7 +118,7 @@
 # print(tup2.count(45))
 
 # dictionary => collection of key value pair,key must be unique,value may be duplicate,{,},indexing & slicing not supported,mutable
-# details={'name':'Ashly','age':30,'city':'noida'}
+# details={'name':'Ash','age':30,'city':'noida'}
 # details2={'name':'Ashly','age':30}
 # details2.update(details)
 # print(details2)
@@ -205,4 +205,5 @@ print(fs1.issuperset(fs2))
 # dict{}
 # set{}
 # frozenset{}###
+import array as arr
 

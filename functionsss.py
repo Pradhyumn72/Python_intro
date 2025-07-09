@@ -173,6 +173,7 @@ from functools import reduce
 l1=[1,2,3,4,5]
 l2=[1,2,3,4,5,6,7,8]
 l3=[1,2,3,4,5,6,7,2]
+l4=[,2,3,4,5,2,3,9]
 # def maxx(x,y):
 #     if x>y:
 #         return x
