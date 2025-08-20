@@ -6,6 +6,7 @@ cno = input("Enter your contact number: ")
 i = input("Upload file (filename with extension): ")
 d = input("Upload document (filename with extension): ")
 p = input("Enter your password: ")
+
 if n:
 # name
     if n.replace(" ", "").isalpha():
