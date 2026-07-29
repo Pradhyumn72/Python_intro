@@ -169,11 +169,11 @@
 # print(list(y))
 
 # Reduce(func-name.iterator,initial val) - for single output 
-from functools import reduce
-l1=[1,2,3,4,5]
-l2=[1,2,3,4,5,6,7,8]
-l3=[1,2,3,4,5,6,7,2]
-l4=[,2,3,4,5,2,3,9]
+# from functools import reduce
+# l1=[1,2,3,4,5]
+# l2=[1,2,3,4,5,6,7,8]
+# l3=[1,2,3,4,5,6,7,2]
+# l4=[,2,3,4,5,2,3,9]
 # def maxx(x,y):
 #     if x>y:
 #         return x
@@ -233,17 +233,24 @@ l4=[,2,3,4,5,2,3,9]
 # print(x)
 # z=x()
 # print(z)
-@decor
+# @decor
 
-def decor(x):
-    def inner_func(r,s):
-        r=r+5
-        s=s+5
-        p=x(r,s)
-        return p
-    return inner_func
-@decor
-def add(x,y):
-    return x+y
-z=add(5,10)
-print(z)
+# def decor(x):
+#     def inner_func(r,s):
+#         r=r+5
+#         s=s+5
+#         p=x(r,s)
+#         return p
+#     return inner_func
+# @decor
+# def add(x,y):
+#     return x+y
+# z=add(5,10)
+# print(z)
+str = "Python is a programming language" 
+print(str.split(" ")) 
+str = "Python is a programming language" 
+print(str.split(",",2)) 
+print(str.split(":",4)) 
+print(str.split(" ",1)) 
+print(str.split(" ",0)) 
