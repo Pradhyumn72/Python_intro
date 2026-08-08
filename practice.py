@@ -366,5 +366,22 @@
 # print(violate())
 
 
-def threat():
-    
+def threat(n,r):
+    total_sum=0
+    newsum=0
+    arr=[]
+    while n>0:
+        d=n%10
+        total_sum+=d
+        n=n//10
+        return total_sum*r
+
+    while total_sum >0:
+        d=total_sum%10
+        newsum+=d
+        total_sum=total_sum//10
+        return newsum
+print(threat(99,3))
+
+        
+
