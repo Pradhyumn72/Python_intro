@@ -289,22 +289,82 @@
 
 
 #  dutch national flag 
-def dutch(nums):
-    low=0
-    mid=0
-    high=len(nums)-1
-    while (mid<=high):
-        if (nums[mid]==0):
-            nums[low],nums[mid]=nums[mid],nums[low]
-            low+=1
-            mid+=1
+# def dutch(nums):
+#     low=0
+#     mid=0
+#     high=len(nums)-1
+#     while (mid<=high):
+#         if (nums[mid]==0):
+#             nums[low],nums[mid]=nums[mid],nums[low]
+#             low+=1
+#             mid+=1
 
-        elif (nums[mid]==1):
-            mid+=1
+#         elif (nums[mid]==1):
+#             mid+=1
 
-        else:
-            nums[high],nums[mid]=nums[mid],nums[high]
-    return nums
+#         else:
+#             nums[high],nums[mid]=nums[mid],nums[high]
+#             high-=1
+#     return nums
 
-nums=[1,2,2,0,1,2,2,0]
-dutch(nums)
+# nums=[1,2,2,0,1,2,2,0]
+# print(dutch(nums))
+
+
+# move zeroes to end
+
+# def move_zeroes(nums):
+#     i=0
+#     j=0
+#     for i in range(0,len(nums)):
+#         if(nums[i]!=0):
+#             nums[i],nums[j]=nums[j],nums[i]
+#             i+=1
+#             j+=1
+#     return nums
+
+# nums=[4,0,6,0,2,1,9,0,5]
+# print(move_zeroes(nums))
+
+# def count_elements(nums):
+#     count=1
+#     i=0
+#     for i in range(1,len(nums)-1):
+#         if nums[i]<nums[i+1]:
+#             count+=1
+#             i+=1
+#     return count
+
+# nums=[1,2,3,4,5]
+# print(count_elements(nums))
+
+# n=int(input())
+# prod=1
+# if n==0:
+#     print(1)
+# elif n<0:
+#     print(False)
+# for i in range(1,n+1):
+#     prod*=i
+#     print(prod)
+
+# def violate():
+#     n=list(map(int,input().split()))
+#     d=int(input())
+#     fine=int(input())
+#     count=0
+#     for i in range(len(n)):
+#         if (d%2==0):
+#             if (n[i]%2!=0):
+#                 count+=1
+#                 # print(count)
+#         else:
+#             if(n[i]%2==0):
+#                 count+=1
+#     return fine*count
+
+# print(violate())
+
+
+def threat():
+    
