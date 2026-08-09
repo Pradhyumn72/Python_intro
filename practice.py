@@ -366,22 +366,118 @@
 # print(violate())
 
 
-def threat(n,r):
-    total_sum=0
-    newsum=0
-    arr=[]
-    while n>0:
-        d=n%10
-        total_sum+=d
-        n=n//10
-        return total_sum*r
+# def threat(n,r):
+#     total_sum=0
+#     total=0
+#     while n>0:
+#         d=n%10
+#         total_sum+=d
+#         n=n//10
+#     total_sum=total_sum*r
 
-    while total_sum >0:
-        d=total_sum%10
-        newsum+=d
-        total_sum=total_sum//10
-        return newsum
-print(threat(99,3))
+    
+#     while total_sum >=10:
+#         newsum=0
+#         while total_sum>0:
+#             d=total_sum%10
+#             newsum+=d
+#             total_sum=total_sum//10
+#         total=newsum
+#     return total
+# print(threat(99,3))
 
+
+# def second_largest():
+#     arr=list(map(int,input().split()))
+#     largest=arr[0]
+#     slargest=-1
+#     for i in range(0,len(arr)):
+#         if (arr[i]>largest):
+#             slargest=largest
+#             largest=arr[i]
+#         elif (arr[i]<largest and arr[i]>slargest):
+#             slargest=arr[i]
+#     return slargest
+
+# print(second_largest())
+
+
+# def second_smallest():
+#     arr=list(map(int,input().split()))
+#     smallest=arr[0]
+#     ssmallest=float('inf')
+#     for i in range(0,len(arr)):
+#         if (arr[i]<smallest):
+#             ssmallest=smallest
+#             smallest=arr[i]
+#         elif(arr[i]543)
+
+# def rev():
+#     n=list(map(int,input().split()))
+#     s=0
+#     e=len(n)-1
+#     while s<e:
+#         n[s],n[e]=n[e],n[s]
+#         s+=1
+#         e-=1
+#     return n
+
+# print(rev())
+
+# n=list(map(int,input().split()))
+# i=0
+# sum=0
+# for i in range(0,len(n)):
+#     sum+=n[i]
+#     avg=sum//len(n)
+
+# print(avg)
+
+# n=str(input())
+# f={}
+
+# for ch in n :
+#     f[ch]=f.get(ch,0)+1
+# print(f)
+
+# def sortti():
+#     n=list(map(int,input().split()))
+#     i=0
+#     j=i+1
+#     while i<j:
+#         if(n[i]>n[j]):
+#             n[i],n[j]=n[j],n[i]
+#             i+=1
+#             j+=1
+#     return n
+
+# print(sortti())
         
+# def remove_duplicates(arr):
+#     seen = set()
+#     result = []
+
+#     for num in arr:
+#         if num not in seen:
+#             seen.add(num)
+#             result.append(num)
+
+#     return result
+# print(remove_duplicates([8,4,1,0,4,8,1]))
+
+# def symmetric_pairs(arr):
+#     seen = set()
+
+#     for a, b in arr:
+#         if (b, a) in seen:
+#             print((a, b))
+#         else:
+#             seen.add((a, b))
+
+
+# arr = [(1, 2), (2, 1), (3, 4), (5, 6), (4, 3)]
+
+# symmetric_pairs(arr)
+
+#  maximum product subarray
 
