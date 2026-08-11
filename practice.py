@@ -480,4 +480,65 @@
 # symmetric_pairs(arr)
 
 #  maximum product subarray
+# def product(arr):
+#     curr_max=arr[0]
+#     curr_min=arr[0]
+#     ans=arr[0]
+#     for i in range(0,len(arr)):
+#         num=arr[i]
+#         temp=curr_max
+#         curr_max=max(num,num*curr_max,num*curr_min)
+#         curr_min=min(num,num*temp,num*curr_min)
+#         ans=max(ans,curr_max)
+#     return ans
+# print(product([1,2,3,4,5,0]))
 
+# def rank(arr):
+#     print(arr)
+#     arr.sort()
+#     i=0
+#     for i in range(0,len(arr)):
+#         arr[i]=i+1
+#         i+=1
+#     return arr
+
+# print(rank([1,6,2,9,3]))
+# Function to find the equilibrium index in the array
+# def findEquilibriumIdx(nums, n):
+    
+#     totalSum = sum(nums)
+
+    
+#     leftSum = 0
+#     rightSum = totalSum
+
+    
+#     for i in range(n):
+#         rightSum -= nums[i]  
+
+#         if leftSum == rightSum:
+#             return i  
+
+#         leftSum += nums[i]  
+
+#     return -1  
+
+
+def sortt_arr(arr1,arr2):
+    freq={}
+    for i in arr1:
+        freq[i]=freq.get(i,0)+1
+
+    result=[]
+    for i in arr2:
+        if i in freq:
+            result.extend([i]*freq[i])
+            del freq[i]
+
+    remaining=list(freq.keys())
+    remaining.sort()
+    for i in remaining:
+        result.extend([i]*freq[i])
+    return result
+
+print(sortt_arr([1,2,3,3,2,4,5],[2,2,3,4,5,3,6]))
