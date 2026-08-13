@@ -644,3 +644,20 @@ import numpy as np
 
 # print(transpose)
 
+def ingri(arr,target):
+    i=0
+    j=0
+    found=False
+    for i in range(0,len(arr)):
+        if arr[i]==target:
+            print(arr[i])
+            found=True
+    for i in range(len(arr)):
+        for j in range(i+1,len(arr)):
+            if arr[i]+arr[j]==target:
+                print(arr[i],arr[j])
+                found=True
+    if not found:
+        print("No Target sum Found")
+
+print(ingri([1,1,2,3],3))
