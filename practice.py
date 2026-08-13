@@ -644,20 +644,37 @@ import numpy as np
 
 # print(transpose)
 
-def ingri(arr,target):
-    i=0
-    j=0
-    found=False
-    for i in range(0,len(arr)):
-        if arr[i]==target:
-            print(arr[i])
-            found=True
-    for i in range(len(arr)):
-        for j in range(i+1,len(arr)):
-            if arr[i]+arr[j]==target:
-                print(arr[i],arr[j])
-                found=True
-    if not found:
-        print("No Target sum Found")
+# def ingri(arr,target):
+#     i=0
+#     j=0
+#     found=False
+#     for i in range(0,len(arr)):
+#         if arr[i]==target:
+#             print(arr[i])
+#             found=True
+#     for i in range(len(arr)):
+#         for j in range(i+1,len(arr)):
+#             if arr[i]+arr[j]==target:
+#                 print(arr[i],arr[j])
+#                 found=True
+#     if not found:
+#         print("No Target sum Found")
 
-print(ingri([1,1,2,3],3))
+# (ingri([1,1,2,3],3))
+
+month = int(input())
+year = int(input())
+
+if month in [1, 3, 5, 7, 8, 10, 12]:
+    days = 31
+
+elif month in [4, 6, 9, 11]:
+    days = 30
+
+else:  # February
+    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+        days = 29
+    else:
+        days = 28
+
+print("Number of days is", days)
