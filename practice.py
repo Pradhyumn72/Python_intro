@@ -1,4 +1,5 @@
 # import re
+import numpy as np
 
 # n = input("Enter your name: ")
 # e = input("Enter your email: ")
@@ -524,21 +525,139 @@
 #     return -1  
 
 
-def sortt_arr(arr1,arr2):
-    freq={}
-    for i in arr1:
-        freq[i]=freq.get(i,0)+1
+# def sortt_arr(arr1,arr2):
+#     freq={}
+#     for i in arr1:
+#         freq[i]=freq.get(i,0)+1
 
-    result=[]
-    for i in arr2:
-        if i in freq:
-            result.extend([i]*freq[i])
-            del freq[i]
+#     result=[]
+#     for i in arr2:
+#         if i in freq:
+#             result.extend([i]*freq[i])
+#             del freq[i]
 
-    remaining=list(freq.keys())
-    remaining.sort()
-    for i in remaining:
-        result.extend([i]*freq[i])
-    return result
+#     remaining=list(freq.keys())
+#     remaining.sort()
+#     for i in remaining:
+#         result.extend([i]*freq[i])
+#     return result
 
-print(sortt_arr([1,2,3,3,2,4,5],[2,2,3,4,5,3,6]))
+# print(sortt_arr([1,2,3,3,2,4,5],[2,2,3,4,5,3,6]))
+
+# rows, cols = map(int, input().split())
+
+# matrix = []
+
+# for i in range(rows):
+#     row = list(map(int, input().split()))
+#     matrix.append(row)
+
+# print(matrix)
+
+# def counting(n):
+#     vowel="aeiou"
+#     cnt=0
+#     vow=0
+#     spc=0
+#     for ch in n:
+#         if ch==" ":
+#             spc+=1
+#         elif ch in vowel:
+#             vow+=1
+#         else:
+#             cnt+=1
+#     return cnt,vow,spc
+# print(counting("hello"))
+
+
+# def remove(n):
+#     vowel="aeiou"
+#     result=""
+#     for ch in n:
+#         if ch not in vowel:
+#             result+=ch
+#     return result
+
+# print(remove("hello"))
+
+# def removedup(n):
+#     seen=set()
+#     result=""
+#     for ch in n:
+#         if ch not in seen:
+#             result+=ch
+#             seen.add(ch)
+#     return result
+
+# print(removedup("programming"))
+
+# rows, cols = map(int, input().split())
+
+# matrix = []
+
+# for i in range(rows):
+#     matrix.append(list(map(int, input().split())))
+
+# print(matrix)
+
+# row sum
+# matrix=[
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+# rows=len(matrix)
+# cols=len(matrix[0])
+# for i in range(cols):
+#     total=0
+#     for j in range(cols):
+#         total+=matrix[i][j]
+#     print(total)
+
+# cols sum
+# rows=len(matrix)
+# cols=len(matrix[0])
+# for j in range(cols):
+#     total=0
+#     for i in range(rows):
+#         total+=matrix[i][j]
+#     print(total)
+
+# max and min of elements
+# rows=len(matrix)
+# cols=len(matrix[0])
+# max=matrix[0][0]
+# for i in range(rows):
+#     for j in range(cols):
+#          if matrix[i][j]>max:
+#               max=matrix[i][j]
+# print(max)
+
+
+
+# matrix = np.array([
+#     [1, 2, 3],
+#     [4, 5, 6]
+# ])
+
+# transpose = matrix.T
+
+# print(transpose)
+
+def ingri(arr,target):
+    i=0
+    j=0
+    found=False
+    for i in range(0,len(arr)):
+        if arr[i]==target:
+            print(arr[i])
+            found=True
+    for i in range(len(arr)):
+        for j in range(i+1,len(arr)):
+            if arr[i]+arr[j]==target:
+                print(arr[i],arr[j])
+                found=True
+    if not found:
+        print("No Target sum Found")
+
+print(ingri([1,1,2,3],3))
