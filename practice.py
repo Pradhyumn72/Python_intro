@@ -662,19 +662,56 @@ import numpy as np
 
 # (ingri([1,1,2,3],3))
 
-month = int(input())
-year = int(input())
+# month = int(input())
+# year = int(input())
 
-if month in [1, 3, 5, 7, 8, 10, 12]:
-    days = 31
+# if month in [1, 3, 5, 7, 8, 10, 12]:
+#     days = 31
 
-elif month in [4, 6, 9, 11]:
-    days = 30
+# elif month in [4, 6, 9, 11]:
+#     days = 30
 
-else:  # February
-    if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
-        days = 29
-    else:
-        days = 28
+# else:  # February
+#     if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+#         days = 29
+#     else:
+#         days = 28
 
-print("Number of days is", days)
+# print("Number of days is", days)
+
+# def identify(A,B):
+#     for i in range(len(A)):
+#             if A[i]<B[i]:
+#                 return -1 
+
+#     for ch in B:
+#         if ch not in A:
+#             return -1
+#     ans=set()
+#     for i in range(len(A)):
+#         if A[i]!=B[i]:
+#             ans.add(B[i])
+#     return len(ans)
+# (identify("abc","aab"))
+
+
+# def energy(B,zombie):
+#     zombie.sort(reverse=True)
+#     for z in zombie:
+#         if B<z:
+#             return "NO"
+#         loss=(z%2)+(z/2)
+#         B-=loss
+#     return "YES"
+# print(energy(35,[6,7,10]))
+
+
+def jersey_no():
+    rows,cols=map(int,input().split())
+    matrix=[]
+    for i in range(rows):
+        matrix.append(rows)
+    for j in range(cols):
+        matrix.append(cols)
+    for x in range(rows):
+        
