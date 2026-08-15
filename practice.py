@@ -706,12 +706,49 @@ import numpy as np
 # print(energy(35,[6,7,10]))
 
 
-def jersey_no():
-    rows,cols=map(int,input().split())
-    matrix=[]
-    for i in range(rows):
-        matrix.append(rows)
-    for j in range(cols):
-        matrix.append(cols)
-    for x in range(rows):
-        
+# def jersey_no():
+#     rows,cols=map(int,input().split())
+#     matrix=[]
+#     summ=0
+#     summc=0
+#     for i in range(rows):
+#         matrix.append(rows)
+#     for j in range(cols):
+#         matrix.append(cols)
+#     for x in range(rows):
+#         maxsum1=0
+#         for y in range(cols):
+#             summ+=rows[x][y]
+#             maxsum1=max(maxsum1,summ)
+#     for y in range(cols):
+#         maxsum2=0
+#         for x in range(rows):
+#             summc+=cols[x][y]
+#             maxsum2=max(maxsum2,summc)
+#     return maxsum1+maxsum2
+# jersey_no()
+
+# def jersey_no(matrixx):
+#     rows=len(matrixx)
+#     cols=len(matrixx[0])
+#     maxsum1=0
+#     maxsum2=0
+#     for i in range(rows):
+#         summr=0
+#         for j in range(cols):
+#             summr+=matrixx[i][j]
+#         maxsum1=max(maxsum1,summr)
+#     for j in range(cols):
+#         summc=0
+#         for i in range(rows):
+#             summc+=matrixx[i][j]
+#         maxsum2=max(maxsum2,summc)
+#     return maxsum1+maxsum2
+
+def check(n,m,k):
+
+    if (2 * n * m) % k == 0:
+        print("YES")
+    else:
+        print("NO")
+check([1,0,0],[0,1,0],[0,0,3])
